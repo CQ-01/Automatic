@@ -1,7 +1,7 @@
 # I. SQL 기본
 ## 1. 관계형 데이터베이스 개요
 - DB : 특정 기업이나 조직 혹은 개인의 필요에 의해 데이터를 일정한 형태로 저장해 놓은 것
-- DBMS : 효율적인 데이터관리 및 예기치 못한 사건으로 인한 데이터의 손상을 피하고, 필요시 데이터를 복귀하기 위한 SW
+- DBMS : 효율적인 데이터관리 및 예기치 못한 사건으로 인한 데이터의 손상을 피하고, 필요시 데이터를 복구하기 위한 SW
 - SQL : 관계형 DB에서 데이터 정의, 조작, 제어를 위해 사용하는 언어
   - DML : SELECT, INSERT, UPDATE, DELETE
   - DDL : CREATE, ALTER, DROP, RENAME
@@ -62,10 +62,10 @@ ADD CONSTRAINT 조건명 조건(컬럼명);
 # 테이블명 변경
 RENAME PLAYER TO PLAYER_BACKUP;
 
-# 테이블 삭제
+# 테이블 자체 삭제(복구 불가)
 DROP TABLE PLAYER;
 
-# 테이블 데이터 삭제
+# 테이블 데이터 삭제(복구 불가)
 TRUNCATE TABLE PLAYER;
 
 # 컬럼명 변경
